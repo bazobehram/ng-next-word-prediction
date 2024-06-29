@@ -1,0 +1,11 @@
+<div class="input-wrapper">
+    <h1>Next Word Predictor</h1>
+    <textarea
+        nextWordPrediction
+        (inputChanged)="onInputChanged($event)"
+        (input)="updateUserInput($event)"
+        (keydown)="onKeydown($event)"
+        placeholder="Type your text here..."
+    ></textarea>
+    <span class="prediction">{{ prediction }}</span>
+</div>
